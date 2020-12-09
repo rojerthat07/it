@@ -56,15 +56,27 @@ body {
   position: sticky;
   top: 0;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .navbar .navbar-nav .nav-item {
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: black;
 }
 
+.navbar .navbar-nav .nav-item:hover {
+  color: white;
+}
+
 .navbar .navbar-nav .nav-item .nav-link {
+  display: inline;
   color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: white;
 }
 
 .landing {
