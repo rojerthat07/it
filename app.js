@@ -6,6 +6,6 @@ function contactus() {
 }
 
 function submitrequest() {
-  alert("You have been successfully sent an request");
+  alert("You have been successfully sent a request");
   e.preventDefault();
 }

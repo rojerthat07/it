@@ -47,12 +47,20 @@ body {
     position: sticky;
     top: 0;
     text-transform: uppercase;
+    font-weight: bold;
     .nav-item {
-      font-size: 0.8em;
+      font-size: 0.7em;
       color: black;
-
+      &:hover {
+        color: white;
+      }
       .nav-link {
+        display: inline;
         color: black;
+        transition: 0.2s;
+        &:hover {
+          color: white;
+        }
       }
     }
   }
