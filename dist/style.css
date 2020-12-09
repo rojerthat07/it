@@ -87,6 +87,14 @@ body {
   padding: 0 5em;
 }
 
+@media (max-width: 900px) {
+  .landing {
+    font-size: 0.8em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .landing__section-1 {
   padding: 1em;
 }
@@ -108,6 +116,13 @@ body {
   padding: 1em;
 }
 
+@media (max-width: 900px) {
+  .landing__section-2 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
 .landing__section-2 img {
   cursor: pointer;
   margin: auto;
@@ -115,6 +130,12 @@ body {
   width: 90%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+@media (max-width: 900px) {
+  .landing__section-2 img {
+    width: 70%;
+  }
 }
 
 .landing__section-2 img:hover {
@@ -125,6 +146,12 @@ body {
 .vision-mission {
   border: 2px solid #918b8b;
   margin: 5em 0;
+}
+
+@media (max-width: 900px) {
+  .vision-mission {
+    font-size: 0.7em;
+  }
 }
 
 .section {
@@ -144,9 +171,33 @@ body {
   margin-bottom: 5em;
 }
 
+@media (max-width: 900px) {
+  .form {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 900px) {
+  .form input {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 900px) {
+  .form textarea {
+    font-size: 0.9em;
+  }
+}
+
 .form__title {
   font-size: 3em;
   margin: 0.5em 0;
+}
+
+@media (max-width: 900px) {
+  .form__title {
+    font-size: 2.3em;
+  }
 }
 
 .form__submit {
@@ -173,6 +224,12 @@ body {
   font-size: 1.5em;
 }
 
+@media (max-width: 900px) {
+  .landing__submit {
+    font-size: 1.2em;
+  }
+}
+
 .two-section {
   display: -ms-grid;
   display: grid;
@@ -183,5 +240,11 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+@media (max-width: 900px) {
+  .mail-address {
+    font-size: 0.9em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
