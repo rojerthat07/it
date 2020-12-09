@@ -62,12 +62,17 @@ body {
   background-image: linear-gradient(to right, white, white, rgb(16, 199, 16));
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   justify-content: center;
   align-content: center;
   align-items: center;
   min-height: 90vh;
   height: 100%;
   padding: 0 5em;
+  @media (max-width: 900px) {
+    font-size: 0.8em;
+    grid-template-columns: 1fr;
+  }
 }
 
 .landing__section-1 {
@@ -88,6 +93,9 @@ body {
 }
 
 .landing__section-2 {
+  @media (max-width: 900px) {
+    grid-row: 1;
+  }
   padding: 1em;
 
   img {
@@ -96,6 +104,9 @@ body {
     display: block;
     width: 90%;
     transition: 0.5s;
+    @media (max-width: 900px) {
+      width: 70%;
+    }
     &:hover {
       transform: scale(1.1, 1.1);
     }
@@ -104,6 +115,9 @@ body {
 .vision-mission {
   border: 2px solid rgb(145, 139, 139);
   margin: 5em 0;
+  @media (max-width: 900px) {
+    font-size: 0.7em;
+  }
   // box-shadow: 5px 15px 15px rgb(128, 128, 128);
 }
 .section {
@@ -119,11 +133,29 @@ body {
 
 .form {
   margin-bottom: 5em;
+  @media (max-width: 900px) {
+    font-size: 0.9em;
+  }
+
+  input {
+    @media (max-width: 900px) {
+      font-size: 0.9em;
+    }
+  }
+
+  textarea {
+    @media (max-width: 900px) {
+      font-size: 0.9em;
+    }
+  }
 }
 
 .form__title {
   font-size: 3em;
   margin: 0.5em 0;
+  @media (max-width: 900px) {
+    font-size: 2.3em;
+  }
 }
 
 .form__submit {
@@ -144,10 +176,19 @@ body {
 }
 .landing__submit {
   font-size: 1.5em;
+  @media (max-width: 900px) {
+    font-size: 1.2em;
+  }
 }
 .two-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   align-content: center;
+}
+
+.mail-address {
+  @media (max-width: 900px) {
+    font-size: 0.9em;
+  }
 }
