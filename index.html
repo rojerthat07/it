@@ -49,7 +49,7 @@
     <div class="landing">
       <div class="landing__section-1">
 
-        <div class="landing__heading-1">Barangay Online Transaction</div>
+        <div class="landing__heading-1" id="main-title"> </div>
         <p class="landing__heading-2">Fastest and most secured Because We care for you!
           <br>
 
@@ -68,7 +68,7 @@
     <div class="container">
 
 
-      <form id="request-form" class="form">
+      <form id="request-form" class="form" onsubmit="submitrequest()">
         <div class="form__title"> Request form:</div>
 
         <div class="row">
@@ -233,8 +233,7 @@
           possible.
         </p>
 
-        <form class="form contact-form d-flex flex-column align-items-left" action="https://formspree.io/youremail@mail.com"
-          method="POST">
+        <form onsubmit="contactus()" class="form contact-form d-flex flex-column align-items-left" >
           <div class="form-group w-75">
             <input type="name" class="form-control" placeholder="Location" name="name" required />
           </div>
