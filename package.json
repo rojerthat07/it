@@ -1,0 +1,12 @@
+{
+  "name": "it",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "homepage": "https://rojerthat07.github.io/it",
+  "author": "",
+  "license": "ISC"
+}
