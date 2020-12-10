@@ -68,14 +68,15 @@
     <div class="container">
 
 
-      <form id="request-form" class="form" onsubmit="submitrequest()">
+      <form id="request-form" class="form" onsubmit="submitrequest()"  action="https://formspree.io/f/xwkwrqla"
+      method="POST">
         <div class="form__title"> Request form:</div>
 
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
               <label for="first">First Name</label>
-              <input required type="text" class="form-control" placeholder="" id="first" />
+              <input required type="text" name="first-name" class="form-control" placeholder="" id="first" />
             </div>
           </div>
           <!--  col-md-6   -->
@@ -83,7 +84,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="last">Middle Name</label>
-              <input required type="text" class="form-control" placeholder="" id="last" />
+              <input required type="text" name="middle-name" class="form-control" placeholder="" id="last" />
             </div>
           </div>
           <!--  col-md-6   -->
@@ -93,7 +94,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="first">Last Name</label>
-              <input required type="text" class="form-control" placeholder="" id="first" />
+              <input required type="text" name="last-name" class="form-control" placeholder="" id="first" />
             </div>
           </div>
           <!--  col-md-6   -->
@@ -101,7 +102,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="last">Address</label>
-              <input required type="text" class="form-control" placeholder="" id="last" />
+              <input required type="text" name="address" class="form-control" placeholder="" id="last" />
             </div>
           </div>
           <!--  col-md-6   -->
@@ -112,7 +113,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="first">Purok</label>
-              <input required type="text" class="form-control" placeholder="" id="first" />
+              <input required type="text" name="purok" class="form-control" placeholder="" id="first" />
             </div>
           </div>
           <!--  col-md-6   -->
@@ -120,7 +121,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="last">Age</label>
-              <input required type="text" class="form-control" placeholder="" id="last" />
+              <input required type="text" name="age" class="form-control" placeholder="" id="last" />
             </div>
           </div>
         </div>
@@ -129,7 +130,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="first">Gender</label>
-              <input required type="text" class="form-control" placeholder="" id="first" />
+              <input required type="text" name="gender" class="form-control" placeholder="" id="first" />
             </div>
           </div>
           <!--  col-md-6   -->
@@ -137,7 +138,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <label for="last">Civil Status</label>
-              <input required type="text" class="form-control" placeholder="" id="last" />
+              <input required type="text" name="civil-status" class="form-control" placeholder="" id="last" />
             </div>
           </div>
 
@@ -147,38 +148,38 @@
               <div class="col-8">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
-                  <label class="custom-control-label" for="customCheck1">Cedula</label>
+                  <label class="custom-control-label" name="cedula" for="customCheck1">Cedula</label>
                 </div>
 
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck2">
-                  <label class="custom-control-label" for="customCheck2">Barangay Indigency</label>
+                  <label class="custom-control-label" name="barangay-indigency" for="customCheck2">Barangay Indigency</label>
                 </div>
 
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck3">
-                  <label class="custom-control-label" for="customCheck3">Barangay Clearance</label>
+                  <label class="custom-control-label" name="barangay-clearance" for="customCheck3">Barangay Clearance</label>
                 </div>
 
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck4">
-                  <label class="custom-control-label" for="customCheck4">Barangay Certification</label>
+                  <label class="custom-control-label" name="barangay-certification" for="customCheck4">Barangay Certification</label>
                 </div>
 
 
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck5">
-                  <label class="custom-control-label" for="customCheck5">Community Tax Certificate</label>
+                  <label class="custom-control-label" name="community-tax-certificate" for="customCheck5">Community Tax Certificate</label>
                 </div>
 
 
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck6">
-                  <label class="custom-control-label" for="customCheck6">Request Form for Scholar</label>
+                  <label class="custom-control-label" name="request-form-for-scholar" for="customCheck6">Request Form for Scholar</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck7">
-                  <label class="custom-control-label" for="customCheck7">Medical Certificate</label>
+                  <label class="custom-control-label" name="medical-certificate" for="customCheck7">Medical Certificate</label>
                 </div>
 
 
@@ -233,20 +234,21 @@
           possible.
         </p>
 
-        <form onsubmit="contactus()" class="form contact-form d-flex flex-column align-items-left">
+        <form onsubmit="contactus()"  action="https://formspree.io/f/xvovwqkv"
+        method="POST" class="form contact-form d-flex flex-column align-items-left">
           <div class="form-group w-75">
-            <input type="name" class="form-control" placeholder="Location" name="name" required />
+            <input type="name" class="form-control" name="name" placeholder="Location" name="name" required />
           </div>
           <div class="form-group w-75">
-            <input type="email" class="form-control" placeholder="Email" name="email" required />
-          </div>
-
-          <div class="form-group w-75">
-            <input type="number" class="form-control" placeholder="Contact Number" name="contact" required />
+            <input type="email" class="form-control" name="email" placeholder="Email" name="email" required />
           </div>
 
           <div class="form-group w-75">
-            <textarea class="form-control" style="resize: none;" type="text" placeholder="Message" rows="7" name="name"
+            <input type="number" class="form-control" name="contact" placeholder="Contact Number" name="contact" required />
+          </div>
+
+          <div class="form-group w-75">
+            <textarea class="form-control" name="message" style="resize: none;" type="text" placeholder="Message" rows="7" name="name"
               required></textarea>
           </div>
 
