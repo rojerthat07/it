@@ -8,7 +8,7 @@
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -30,7 +30,14 @@ body {
 }
 
 .navbar {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(white), to(#10c710));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    color-stop(white),
+    to(#10c710)
+  );
   background-image: linear-gradient(to right, white, white, #10c710);
   color: #10c710 !important;
 }
@@ -50,8 +57,8 @@ body {
 .navbar .navbar-nav {
   margin-left: auto;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -80,20 +87,27 @@ body {
 }
 
 .landing {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), color-stop(white), to(#10c710));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    color-stop(white),
+    to(#10c710)
+  );
   background-image: linear-gradient(to right, white, white, #10c710);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 90vh;
   height: 100%;
   padding: 0 5em;
@@ -103,7 +117,7 @@ body {
   .landing {
     font-size: 0.8em;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -152,7 +166,7 @@ body {
 
 .landing__section-2 img:hover {
   -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .vision-mission {
@@ -229,7 +243,7 @@ body {
 
 .form__submit:hover {
   -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 .landing__submit {
@@ -246,12 +260,12 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 @media (max-width: 900px) {
@@ -259,4 +273,76 @@ body {
     font-size: 0.9em;
   }
 }
+.row-2 {
+  width: 100%;
+  padding: 0 80px;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(white),
+    color-stop(white),
+    to(#10c710)
+  );
+  background-image: linear-gradient(to right, white, white, #10c710);
+}
+.row-2 img {
+  margin: 50px;
+  width: 100%;
+}
+.row-2 a {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #10c710 !important;
+  font-size: 2.5vw;
+}
+.group-5 {
+  /* padding-top: 100px; */
+}
+.col-9 {
+  width: 100%;
+  display: block;
+  margin: 5em auto;
+}
+.col-9 {
+  text-align: center;
+  /* padding: 40px 20px; */
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.col-9 img {
+  width: 25vw;
+  height: auto;
+  margin-top: 10px;
+}
+.col-9:hover {
+  transform: translateY(-10px);
+}
+.row-3 {
+  margin-left: 350px;
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #10c710 !important;
+  font-size: 5vw !important;
+  margin: 2em 2em;
+}
+.col-10 {
+  margin: 270px;
+  min-width: 300px;
+  margin-bottom: 25px;
+}
+
+video {
+  width: 80%;
+  display: block;
+  height: 80%;
+  margin: 2em auto;
+}
+
 /*# sourceMappingURL=style.css.map */
